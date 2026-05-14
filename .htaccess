@@ -1,0 +1,12 @@
+# Apache/XAMPP/cPanel hardening for deployed PHP hosting.
+
+Options -Indexes
+
+# Block direct access to local runtime/session files and setup SQL files.
+RewriteEngine On
+RewriteRule ^(runtime|storage)/ - [F,L]
+RewriteRule ^sql/ - [F,L]
+
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>

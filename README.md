@@ -51,3 +51,5 @@ fixerupper/
 Use HTTPS in production so the Secure cookie flag is active. On plain local HTTP, PHP cannot set a usable Secure session cookie, so the code enables the Secure flag automatically when the request is HTTPS.
 
 Product photos are stored locally under `assets/img/products/` so the catalogue does not depend on placeholder image URLs.
+
+For publishing instructions, see `DEPLOYMENT.md`.
