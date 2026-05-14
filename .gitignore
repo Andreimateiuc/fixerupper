@@ -1,0 +1,17 @@
+# Local PHP/runtime files
+runtime/sessions/*
+!runtime/sessions/.gitkeep
+storage/
+
+# Local environment/config overrides
+.env
+.env.local
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
