@@ -35,6 +35,32 @@ For this assignment, use a PHP/MySQL host instead:
 4. Edit `db.php` with the hosting database host, database name, username, and password.
 5. Visit the site URL in the browser.
 
+## InfinityFree Steps
+
+1. Log in to InfinityFree.
+2. Create a free hosting account/site.
+3. Open the site control panel.
+4. Go to **MySQL Databases** and create a database.
+5. Copy these values from InfinityFree:
+   - MySQL hostname
+   - MySQL database name
+   - MySQL username
+   - MySQL password
+6. Open **phpMyAdmin** from InfinityFree and import `sql/schema.sql`.
+7. Open `db.php` and replace the local XAMPP values:
+
+```php
+$dbHost = 'INFINITYFREE_MYSQL_HOST';
+$dbName = 'INFINITYFREE_DATABASE_NAME';
+$dbUser = 'INFINITYFREE_DATABASE_USER';
+$dbPass = 'INFINITYFREE_DATABASE_PASSWORD';
+```
+
+8. Upload the contents of the deployment ZIP into the InfinityFree `htdocs` folder.
+9. Visit the InfinityFree website URL.
+
+Do not upload the whole parent folder if it creates `htdocs/fixerupper/index.php`. The files such as `index.php`, `login.php`, and `assets/` should be directly inside `htdocs`.
+
 ## Security Deployment Notes
 
 - Do not commit real hosting passwords. Keep `db.php` generic before pushing to GitHub.
